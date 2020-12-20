@@ -1,0 +1,82 @@
+/* - - - - - Page connexion - - - - - */
+.log{
+    padding: 5% 10% 0 10%;
+    text-align: inherit;
+}
+
+.logProfil img{
+    float: left;
+    height: 500px;
+    width: 360px;
+    margin-left: 150px;
+}
+
+.login{
+ width: 40%;
+ background-color: white;
+}
+
+.login hr{
+    margin-bottom: 40px;
+}
+
+.login button{
+    display: block;
+    width: 150px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    border: none;
+    background-color: #e4e6e6;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* - - - - - Page inscription - - - - - */
+
+.Inscription{
+    padding: 5% 10% 0 10%;
+}
+
+.Inscription img{
+    float: left;
+    height: 500px;
+    width: 360px;
+    margin-left: 150px;
+}
+
+.InscripTxt{
+    width: 40%;
+    background-color: white;
+    float: left;
+    height: 500px;
+    text-align: center;
+}
+
+.InscripTxt form{
+    display: inline-grid;
+}
+
+.InscripTxt input{
+    margin-bottom: 15px;
+}
+
+.InscripTxt hr{
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.InscripTxt button{
+    display: block;
+    width: 150px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    border: none;
+    background-color: #e4e6e6;
+    margin-top: 20px;
+    border-radius: 10px;
+}

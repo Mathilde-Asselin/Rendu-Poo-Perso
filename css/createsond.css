@@ -1,0 +1,30 @@
+.Creation{
+    text-align: center;
+}
+
+.Creation article{
+    background-color: white;
+    height: 300px;
+    margin: 40px 400px;
+    padding: 30px;
+}
+
+.Creation p {
+    margin: 10px;
+}
+
+.Creation form{
+    margin-top: 40px;
+}
+
+.Creation button{
+    width: 150px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    border: none;
+    background-color: #e4e6e6;
+    margin-top: 20px;
+    border-radius: 10px;
+}

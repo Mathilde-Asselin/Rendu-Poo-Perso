@@ -1,0 +1,23 @@
+.ProfilPerso{
+    padding: 5% 10% 0 10%;
+}
+
+.ProfilPerso img{
+    float: left;
+    height: 500px;
+    width: 360px;
+    margin-left: 150px;
+}
+
+.ProfilInfo{
+    width: 40%;
+    background-color: white;
+    float: left;
+    height: 500px;
+    text-align: center;
+}
+
+.ProfilPerso hr{
+    width: 20%;
+    margin: 0 auto;
+}

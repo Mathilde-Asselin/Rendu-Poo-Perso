@@ -1,0 +1,65 @@
+.AddFriends {
+    background-color: #aacdda;
+    height: 450px;
+    margin: 30px 40px;
+}
+
+.AddFriends h1{
+    font-size: 30px;
+}
+
+.AddFriends article{
+    width: 40%;
+    float: left;
+    margin-left: 150px;
+}
+
+.AddFriends img {
+    float: right;
+    height: 320px;
+    margin-right: 80px;
+    margin-top: 40px;
+}
+
+.FriendsList {
+    padding: 0 30px;
+}
+
+.List01 {
+    width: 60%;
+    float: left;
+    margin: 10px;
+    background-color: #aacdda;
+    height: 600px;
+    padding: 50px;
+}
+
+.List01 ul {
+    display: block;
+    padding: 20px 0;
+}
+
+.List01 li{
+    height: 40px;
+    width: fit-content;
+    background-color: #e4e6e6;
+    border-radius: 6px;
+    margin: 30px 10px;
+    line-height: 40px;
+}
+
+.List02 {
+    background-color: #aacdda;
+    margin: 10px;
+    float: left;
+    width: 22%;
+    height: 600px;
+    padding: 50px;
+}
+.List02 li{
+    margin: 10px 0px;
+}
+
+.TitreRouge{
+    padding: 0 50px;
+}
