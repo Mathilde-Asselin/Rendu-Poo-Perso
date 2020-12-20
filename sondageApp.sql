@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : mer. 02 déc. 2020 à 20:24
--- Version du serveur :  10.5.8-MariaDB
--- Version de PHP : 7.4.12
+-- Généré le : Dim 20 déc. 2020 à 15:50
+-- Version du serveur :  10.5.5-MariaDB
+-- Version de PHP : 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,9 +40,9 @@ CREATE TABLE `friendslist` (
 --
 
 INSERT INTO `friendslist` (`friendsList_id`, `friendsList_userID1`, `friendsList_userID2`) VALUES
-(18, 26, 23),
-(21, 26, 24),
-(24, 26, 25);
+(41, 31, 29),
+(42, 30, 29),
+(43, 30, 31);
 
 -- --------------------------------------------------------
 
@@ -63,23 +63,14 @@ CREATE TABLE `message` (
 --
 
 INSERT INTO `message` (`message_id`, `message_content`, `message_date`, `user_id`, `sondage_id`) VALUES
-(23, 'Vraiment super !', '2020-12-01 17:54:23', 26, 31),
-(24, 'McDo of course', '2020-12-01 17:54:54', 26, 32),
-(25, 'C\'est l\'hiver', '2020-12-01 17:55:30', 26, 33),
-(26, 'Top !', '2020-12-01 17:55:43', 26, 34),
-(27, 'On est d\'accord', '2020-12-01 18:00:36', 23, 31),
-(28, 'I agree', '2020-12-01 18:01:16', 23, 32),
-(29, 'Un peu d\'optimisme !', '2020-12-01 18:01:31', 23, 33),
-(30, 'Yes !', '2020-12-01 18:02:20', 23, 34),
-(31, 'Je n\'ai jamais vu ca', '2020-12-01 18:02:57', 24, 31),
-(32, 'Non du poulet', '2020-12-01 18:03:13', 24, 32),
-(33, 'Super film !', '2020-12-01 18:03:29', 24, 34),
-(34, 'Une pÃ©pite', '2020-12-01 18:04:05', 25, 31),
-(35, 'Je vais prendre des nuggets', '2020-12-01 18:04:26', 25, 32),
-(36, 'J\'adore le mauvais temps et dÃ©teste le soleil', '2020-12-01 18:04:57', 25, 33),
-(37, 'Je n\'aime pas les films', '2020-12-01 18:05:15', 25, 34),
-(38, 'Je prÃ©fÃ¨re la pluie', '2020-12-01 18:05:26', 25, 34),
-(39, 'Test', '2020-12-01 22:43:08', 26, 37);
+(45, 'Vladimir il est trop fort !!', '2020-12-20 16:10:35', 29, 48),
+(46, 'Je regarde pas KohLanta :o', '2020-12-20 16:11:46', 29, 49),
+(47, 'Charline a clairement plus de talent !', '2020-12-20 16:22:36', 31, 48),
+(48, 'Miss Provence elle s\'exprime trop bien !', '2020-12-20 16:23:21', 31, 47),
+(54, 'Ah ouais tu trouves...', '2020-12-20 16:25:21', 29, 47),
+(55, 'Miss Normandie elle est trop belle !', '2020-12-20 16:26:22', 30, 47),
+(56, 'Tu regardes pas KohLanta !!', '2020-12-20 16:26:44', 30, 49),
+(57, 'C\'était trop bien', '2020-12-20 16:26:53', 30, 49);
 
 -- --------------------------------------------------------
 
@@ -99,12 +90,9 @@ CREATE TABLE `sondage` (
 --
 
 INSERT INTO `sondage` (`sondage_id`, `sondage_question`, `user_id`, `sondage_finish`) VALUES
-(31, 'Est ce que notre projet est bien ?', 26, '2021-09-06 16:06:39'),
-(32, 'Que vais-je manger ce soir ?', 26, '2020-12-01 17:06:55'),
-(33, 'Quelle temps fait-il demain ?', 26, '2020-12-01 17:07:07'),
-(34, 'Quel film je vais regarder ce soir ?', 26, '2020-12-01 17:08:48'),
-(37, 'Quel série je vais regarder ?', 26, '2020-12-01 21:40:35'),
-(38, 'Quel survetement acheter ? ', 24, '2021-07-14 19:39:14');
+(47, 'Qui va gagner miss France 2021?', 29, '2021-12-17 16:02:16'),
+(48, 'Qui va gagner Top Chef ?', 30, '2021-11-19 16:06:36'),
+(49, 'Vous avez vu la fin de KohLanta ?', 31, '2021-03-11 15:58:55');
 
 -- --------------------------------------------------------
 
@@ -124,18 +112,12 @@ CREATE TABLE `sondagereponse` (
 --
 
 INSERT INTO `sondagereponse` (`sondageReponse_id`, `sondage_id`, `sondageReponse_reponse`, `sondageReponse_reponseScore`) VALUES
-(17, 31, 'Excellent', 3),
-(18, 31, 'Incroyable', 1),
-(19, 32, 'Kfc', 1),
-(20, 32, 'McDo', 3),
-(21, 33, 'Beau ', 1),
-(22, 33, 'Pas beau', 2),
-(23, 34, 'Hunger Games', 2),
-(24, 34, 'Indiana Jones', 2),
-(29, 37, 'Lucifer', 1),
-(30, 37, 'Suits', 0),
-(31, 38, 'Le nike', 0),
-(32, 38, 'Le Addidas', 0);
+(55, 47, 'Miss Normandie', 1),
+(56, 47, 'Miss Provence ', 1),
+(57, 48, 'Vladimir ', 1),
+(58, 48, 'Charline ', 3),
+(59, 49, 'Ouiii', 2),
+(60, 49, 'Absolument pas', 0);
 
 -- --------------------------------------------------------
 
@@ -170,10 +152,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `user_pseudo`, `user_firstName`, `user_lastName`, `user_email`, `user_password`, `user_online`) VALUES
-(23, 'sachaPseudo', 'Sacha', 'Le Bras', 'mail@mail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 1),
-(24, 'AyoubPseudo', 'Ayoub', 'El Guendouz', 'mail2@mail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 0),
-(25, 'MathildePseudo', 'Mathilde', 'Asselin', 'mail3@mail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 0),
-(26, 'Alexandre.G', 'Alexandre', 'Gaillot', 'alexandre@mail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 1);
+(26, 'Alexandre.G', 'Alexandre', 'Gaillot', 'alexandre@mail.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', 0),
+(29, 'Mathilde', 'Mathilde', 'Asselin', 'mathilde@gmail.com', '8984a5ebacc3e080c9507fe0bd6113587f19fd6cbec2c3b00d841b0921adcab6', 0),
+(30, 'LouisPs', 'Louis', 'Pseudo', 'Louis@gmail.com', 'b264c18ee851eefc00a808018cd52edf12d93ae28e29044c3de537c68e9e5227', 0),
+(31, 'PaulPs', 'Paul', 'Pseudo', 'Paul@edu.devinci.fr', '52d129aa085fb640696f8c1f8d21428de47b90d03ec41c3d836fc6902974e159', 0);
 
 --
 -- Index pour les tables déchargées
@@ -223,25 +205,25 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `friendslist`
 --
 ALTER TABLE `friendslist`
-  MODIFY `friendsList_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `friendsList_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT pour la table `message`
 --
 ALTER TABLE `message`
-  MODIFY `message_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `message_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT pour la table `sondage`
 --
 ALTER TABLE `sondage`
-  MODIFY `sondage_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `sondage_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT pour la table `sondagereponse`
 --
 ALTER TABLE `sondagereponse`
-  MODIFY `sondageReponse_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `sondageReponse_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT pour la table `sondagereponseuser`
@@ -253,7 +235,7 @@ ALTER TABLE `sondagereponseuser`
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
