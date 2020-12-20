@@ -4,8 +4,6 @@ Projet poo perso - Mathilde ASSELIN
 
 ## Installation
 
-Go to the folder of your project, and write in your terminal this line
-Ouvrez votre terminal. 
 Allez dans le dossier de votre projet. 
 Et collez cette ligne dans votre terminal : 
 
